@@ -9,6 +9,8 @@
     display : flex;
     justify-content: space-around;
     align-items : center;
+    transition:  height 1s ease-out 0s;
+    
 }
 body{
     background : rgba(77, 202, 115, 0.2);
@@ -16,7 +18,8 @@ body{
 h2{
     text-align : center;
     font-family : "Russo One";
-    letter-spacing : 3px;
+    font-family: "Lexend Deca";
+    font-weight : bold;
 }
 .QR-Box p:first-child{
     font-family : Poppins;
@@ -57,7 +60,7 @@ h2{
     width : 100px;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.35s ease 1s;
+    transition : opacity 0.35s ease-in 0s; 
 }
 
 
@@ -69,6 +72,7 @@ h2{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1.5fr;
+        
     }
     .QR-Box .qr-contents p{
         margin-bottom : 0px;
@@ -87,6 +91,7 @@ h2{
     }
     .expand{
         height : 400px;
+        
     }
 }
 

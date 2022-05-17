@@ -24,5 +24,9 @@ function Shrink(){
     var input = document.getElementById("input-field").value;
     document.getElementById("gen-btn").innerText = "Generate QR Code";
     if(input=='')
-    qrimg.style.opacity = "0";
+    {
+        qrimg.style.opacity = "0";
+        document.getElementById("QR-Box").classList.remove("expand");
+    }
+    
 }
